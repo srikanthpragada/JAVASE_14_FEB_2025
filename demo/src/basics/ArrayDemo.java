@@ -9,7 +9,11 @@ public class ArrayDemo {
 			a[i] = i * i;
 			System.out.printf("%d ", a[i]);
 		}
-
+		
+		// Enhanced for loop 
+		for (int n : a) {
+			System.out.printf("%d ", n);
+		}
 	}
 
 }
