@@ -7,14 +7,14 @@ public class TestCounter {
 		 c = new Counter();  // Object or Instance
 		 
 		 c.inc();
-		 c.inc();
+		 c.inc(3);
 		 
 		 System.out.println(c.getValue());
 		 c.reset();
 		 c.dec();
 		 System.out.println(c.getValue());
 		 
-		 Counter c2 = new Counter();
+		 Counter c2 = new Counter(10);
 
 	}
 
