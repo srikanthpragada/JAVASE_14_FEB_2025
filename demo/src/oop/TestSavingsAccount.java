@@ -4,6 +4,7 @@ class SavingsAccount {
 	private int acno;
 	private String customer;
 	private int balance;
+	private static int minBalance = 10000;
 	
 	public SavingsAccount(int acno, String customer, int balance) {
 		this.acno = acno;

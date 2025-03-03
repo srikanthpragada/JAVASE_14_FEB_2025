@@ -7,9 +7,13 @@ public class TestCourse {
 		 c1.print();
 		 
 		 System.out.println(c1.getNetFee());
+		 
+		 System.out.println(Course.getTaxRate());
 
 		 
 		 Course c2 = new Course("AWS", 5000);
+		 
+		 
 	}
 
 }
