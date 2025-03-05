@@ -1,6 +1,6 @@
 package oop;
 
-class Product {
+ abstract class Product {
 	protected String title;
 	protected double price;
 
@@ -14,6 +14,8 @@ class Product {
 		System.out.println(this.title);
 		System.out.println(this.price);
 	}
+	
+	public abstract double getNetPrice();
 }
 
 class ImportedProduct extends Product  {
@@ -29,6 +31,7 @@ class ImportedProduct extends Product  {
 		System.out.println(this.importTax);
 	}
 	
+	@Override 
 	public double getNetPrice() {
 		return this.price + this.price * this.importTax / 100;
 	}
@@ -47,6 +50,7 @@ class DiscountedProduct extends Product  {
 		System.out.println(this.discountRate);
 	}
 	
+	@Override 
 	public double getNetPrice() {
 		return this.price - this.price * this.discountRate / 100;
 	}
@@ -63,5 +67,17 @@ public class TestProducts {
 		 
 		 dp.print();
 		 System.out.println(dp.getNetPrice());
+		 
+		 // Upcasting 
+		 Product p = new ImportedProduct("IPad", 50000, 12);
+		 p.print();  // print() comes from ImportedProduct 
+		 System.out.println(p.getNetPrice());
+		 
+		 
+		 p = new DiscountedProduct("Logitech Mouse", 10000, 10);
+		 p.print();   // runtime polymorphism 
+		 System.out.println(p.getNetPrice());
+	 
+		 
 	}
 }
