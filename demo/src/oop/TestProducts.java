@@ -77,6 +77,8 @@ public class TestProducts {
 		 p = new DiscountedProduct("Logitech Mouse", 10000, 10);
 		 p.print();   // runtime polymorphism 
 		 System.out.println(p.getNetPrice());
+		 
+		 
 	 
 		 
 	}
