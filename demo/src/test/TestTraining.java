@@ -13,6 +13,8 @@ public class TestTraining {
 		 
 		 Date d;
 		 java.sql.Date d2;
+		 
+		 //Book b;
 
 	}
 
