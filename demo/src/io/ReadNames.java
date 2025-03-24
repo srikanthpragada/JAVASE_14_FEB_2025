@@ -10,13 +10,13 @@ public class ReadNames {
 		try {
 			// 1. Open
 			var fr = new FileReader("names.txt");
-			while(true) {
-				int ch = fr.read();  // read a char 
-				if(ch == -1)  // EOF
+			while (true) {
+				int ch = fr.read(); // read a char
+				if (ch == -1) // EOF
 					break;
 				System.out.print((char) ch);
 			}
-			 
+
 			// 3. Close
 			fr.close();
 
