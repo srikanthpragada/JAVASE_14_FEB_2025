@@ -12,4 +12,5 @@
     <fullyQualifiedTypeName name="oop2.PaymentModes"/>
     <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.nio.file.Files"/>
 </qualifiedTypeNameHistroy>
