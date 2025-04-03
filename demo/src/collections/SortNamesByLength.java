@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-class CompareByLength implements Comparator<String> {
-	@Override
-	public int compare(String s1, String s2) {
-		 return s1.length() - s2.length();
-	}
-}
+//class CompareByLength implements Comparator<String> {
+//	@Override
+//	public int compare(String s1, String s2) {
+//		 return s1.length() - s2.length();
+//	}
+//}
 
 public class SortNamesByLength {
 
@@ -22,7 +22,11 @@ public class SortNamesByLength {
 		 names.add("Bill Gates");
 		 names.add("Peter Norton");
 		 
-		 Collections.sort(names, new CompareByLength());
+		// Collections.sort(names, new CompareByLength());
+		 Collections.sort(names, 
+				 (s1, s2) -> s1.length() - s2.length()
+				 );
+		 
 		 
 		 for(var n : names)
 			 System.out.println(n);
